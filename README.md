@@ -1,4 +1,4 @@
-# Flashforge Air
+# Flash(Forge|Air)
 
 This is a replacement for the built-in website user-interface on Toshiba FlashAir wireless SSD cards.
 
