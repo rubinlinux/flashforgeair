@@ -25,3 +25,9 @@ Then copy this repository to it inside the SD_WLAN directory. Navigate to the de
   * Figure out why some filenames dont show in the FFCP GUI and do something about it (warn or fix)
   * Add config checking to provide good feedback if uploading is disabled in CONFIG etc
 
+## Credit
+
+Most of the code comes from Toshiba's own tutorial on the flashAir site.
+
+Also uses bootstrap and jquery
+
