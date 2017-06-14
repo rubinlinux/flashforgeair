@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<title>Flash(Forge|Air)</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="copyright" content="(c) 2013, Fixstars Corporation. All rights reserved.">
+	<meta name="author" content="Junichi Kitano">
+	<style>
+	  body {
+		padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	  }
+	</style>
+	<link href="/SD_WLAN/css/bstrap.css" rel="stylesheet" media="screen">
+	<link href="/SD_WLAN/css/bstrapr.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="/">FlashAir</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li class="active"><a href="/"><i class="icon-home"></i>Home</a></li>
+                        <!--
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        -->
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="files">
+            <table id="list" class="table table-hover table-striped table-condensed">
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="/SD_WLAN/js/jquery.js"></script>
+    <script type="text/javascript" src="/SD_WLAN/js/datefrmt.js"></script>
+    <script type="text/javascript" src="/SD_WLAN/js/main.js"></script>
+    <script type="text/javascript" src="/SD_WLAN/js/bstrap.js"></script>
+
+    <!-- See https://flashair-developers.com/en/documents/api/utility/ to understand what is going on here -->
+    <script type="text/javascript">
+    wlansd = new Array();
+    <!--WLANSDJLST-->
+    </script>
+
+	<div class="container">
+		<h4>Upload</h4>
+        <div>
+			<!--
+			<input type="file" id='file' name='file'>
+			</div>
+
+			<div>
+			<button id="cmdUpload">Upload</button>
+			-->
+			<form action="/upload.cgi" method="post" enctype="multipart/form-data">
+			<input name="file" id="file" type=file ><br>
+			<input type="submit" value="submit" ></form>
+        </div>
+	</div>
+</body>
+</html>
