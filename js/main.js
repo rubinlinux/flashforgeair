@@ -55,13 +55,10 @@ function cmpname(a, b) {
     var aName = a['fname'].toLowerCase();
     var bName = b['fname'].toLowerCase();
 
-    console.log("Comparing " + aName + " and " + bName);
     if( (a["attr"] & 0x10) == (b["attr"] & 0x10) ) {
-        console.log("...both are directories or not");
         return aName.localeCompare(bName);
     }
     else {
-        console.log("...choosing the directory");
         return (b["attr"] & 0x10) - (a["attr"] & 0x10) ;
     }
 }
